@@ -1,0 +1,178 @@
+* {
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cotn_principal {
+  position: fixed;
+  width: 100%;
+  height: 120%;
+  background-image: url(IMG/cidade.jpg);
+  background-position: bottom;
+}
+
+.cont_centrar {
+  position: relative;
+  width: 120%;
+  margin-top: 8%;
+}
+
+.cont_login {
+  position: relative;
+  width: 640px;
+  left: 50%;
+  margin-left: -320px;
+  
+}
+
+.cont_back_info {  
+  position: relative;
+  height: 0; /*Tirar lado direito*/
+  overflow: hidden;
+}
+
+.cont_forms { /*Tamanho do Login Inicial*/
+  position: absolute;
+  overflow: hidden;
+  top: 100px;
+  width: 320px;
+  height: 300px;
+  background-color: #eee;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_forms_active_login { /*Tamanho da IMG*/
+  box-shadow: 1px 10px 60px -10px rgb(0 0 0);
+  height: 430px;  
+  top:20px;
+  left: 0px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+
+.cont_img_back_ {
+  position: absolute;
+  width: 955px;
+}
+
+.cont_img_back_ img {
+  width: 100%;
+opacity: .7; 
+animation-name: animar_fondo;
+animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+.cont_forms_active_login > .cont_img_back_ {
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.cont_img_back_ { /*Posicao da IMG*/
+top: -10px;  
+left: -495px;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+ 
+
+.cont_info_log_sign_up {
+position: absolute;
+  top: 100px;
+z-index: 1;
+} 
+
+.col_md_login {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.btn_login { 
+  background-color: #000000b5;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius:8px;
+  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+  color: #fff;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.cont_ba_opcitiy p {
+ font-weight: 400;
+margin-top: 15px;
+}
+
+.cont_ba_opcitiy {     /*Login Inicial*/
+  position: relative;
+  width: 72%;
+  margin-top: 50px;
+  padding: 20px 0 0 80px;
+}
+
+
+@-webkit-keyframes animar_fondo {
+ from { -webkit-transform: scale(1) translate(50px);
+  }
+  to { -webkit-transform: scale(1.5) translate(500px);
+transform: scale(1.5) translate(480px); 
+  }
+}
+
+.cont_form_login {
+  position: absolute;
+display: none;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.cont_forms_active_login {
+z-index: 1;  
+}
+
+.cont_form_login input {
+  padding: 15px 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 260px;
+  border: none;
+  text-align: left;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.cont_form_login img {
+  margin: 20px;
+  max-width: 80px;
+  margin-top: 60px; 
+  margin-right: 65px;
+ 
+}
+.cont_form_login a{
+  float: left;
+  margin: 10px;
+  margin-left: 20px;
+}
