@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="Formulário.css" media="screen">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <div>
+    <h1 id="titulo">Formulário Pessoal</h1>
+        <p id="subtitulo">COMPLETE SUAS INFORMAÇÕES ABAIXO</p>
+        <br> 
+    </div>
+                        <!--INICIO DO FORMULÁRIO-->
+    <form>
+                        
+        
+        
+        
+                        <!-- CAMPO DE NOME E SOBRENOME-->
+        <fieldset class="grupo">
+            <div class="campo"> 
+                <label for="nome"> Nome:</label>
+                <input type="text" name="nome" id="nome" required> 
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+                        <!-- CAMPO DE EMAIL-->
+
+
+            <div class="campo"> 
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+
+
+
+                         <!-- CAMPO DE 3 OPÇÕES DE BOTÕES-->
+            <div class="campo">
+                <label><strong>O que você faz da vida?</strong></label>
+               
+                <label>
+                    <input type="radio" name="devweb" value="Nada">Nada
+                </label>
+
+                <label>
+                    <input type="radio" name="devweb" value="Estudo">Estudo
+                </label>
+
+                <label>
+                    <input type="radio" name="devweb" value="Trabalho">Trabalho
+                </label>
+            </div>
+                       
+            
+            
+                        <!-- CAMPO DE ESCOLHA (SELECT E OPTION)  -->
+            <div class="campo">
+            <label for="raça"><strong>Raça:</strong></label>
+                <select id="raça" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Preto</option>
+                    <option>Branco</option>
+                    <option>Albino</option>
+                </select>
+            </div>
+
+
+                        <!-- CAMPO DE ESCOLHA PARA MARCAÇÃO  -->
+        <fieldset class="grupo">
+            <div class="cursos">
+                <label><strong>Selecione o(s) curso(s) pretendido(s)!</strong></label>
+                <br><br>
+
+                <input type="checkbox" id="info" name="info" value="Informática"><label for="info">Informática</label>
+                <input type="checkbox" id="elet" name="elet" value="Eletromecânica"><label for="elet">Eletromecânica</label>
+                <input type="checkbox" id="agro" name="agro" value="Agropecuária"><label for="agro">Agropecuária</label>
+                <input type="checkbox" id="enf" name="enf" value="Enfermagem"><label for="enf">Enfermagem</label>
+            </div>
+        </fieldset>
+                     
+        
+                        <!-- CAMPO DE CAIXA DE TEXTO  -->
+            <div class="campo"><br>
+                <label for="experiencia"><strong>Conte-nos um pouco sobre você:</strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div><br>
+
+
+                        <!--BOTÃO PARA ENVIAR O FORMULÁRIO-->
+            <button class="botao" type="submit" onsubmit="">ENVIAR</button>
+        </form>
+</body>
+</html>
