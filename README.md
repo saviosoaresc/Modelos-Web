@@ -1,1 +1,1 @@
-# Códigos em HTML/CSS, apenas para serem modificados como queira.
+# Códigos em HTML/CSS, para implementação.
